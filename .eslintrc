@@ -22,7 +22,12 @@
         "error",
         "absolute-first"
       ],
-      "import/newline-after-import": "error"
+      "import/newline-after-import": "error",
+      "arrow-body-style": ["error", "always"],
+      "react/function-component-definition": [0,{
+        "namedComponents": ["arrow-function","function-declaration" , "function-expression"],
+        "unnamedComponents": ["arrow-function","function-expression"]
+      }]
     },
     "globals": {
       "window": true,
@@ -33,5 +38,5 @@
       "Blob": true,
       "navigator": true
     },
-    "parser": "@babel/eslint-parser"
+    "parser": "@babel/eslint-parser",
   }
