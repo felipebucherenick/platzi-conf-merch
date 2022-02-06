@@ -9,7 +9,7 @@ const Products = () => {
   const { state, addToCart } = React.useContext(AppContext);
   const { products } = state;
 
-  const handleAddToCart = (product) => {
+  const handleAddToCart = (product) => () => {
     addToCart(product);
   };
 
@@ -20,7 +20,7 @@ const Products = () => {
           <Product
             key={product.id}
             product={product}
-            handleAddToCart={() => handleAddToCart}
+            handleAddToCart={handleAddToCart}
           />
         ))}
       </div>

@@ -23,7 +23,7 @@
         "absolute-first"
       ],
       "import/newline-after-import": "error",
-      "arrow-body-style": ["error", "always"],
+      "arrow-body-style": ["error", "as-needed"],
       "react/function-component-definition": [0,{
         "namedComponents": ["arrow-function","function-declaration" , "function-expression"],
         "unnamedComponents": ["arrow-function","function-expression"]
