@@ -29,6 +29,7 @@ const Information = () => {
     addToBuyer(buyer);
     navigate('/checkout/payment');
   };
+
   return (
     <div className="Information">
       <div className="Information-content">

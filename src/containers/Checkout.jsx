@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import AppContext from '../context/AppContext';
+import handleSumTotal from '../utils/handleSumTotal';
 
 import '../styles/components/Checkout.css';
 
@@ -11,13 +12,6 @@ const Checkout = () => {
 
   const handleRemoveFromCart = (product) => {
     removeFromCart(product);
-  };
-
-  const handleSumTotal = () => {
-    const reducer = (accumulator, currentValue) =>
-      accumulator + currentValue.price;
-    const sum = cart.reduce(reducer, 0);
-    return sum;
   };
 
   return (
